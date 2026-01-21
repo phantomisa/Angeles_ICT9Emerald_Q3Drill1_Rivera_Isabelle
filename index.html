@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Drill1</title>
+
+	<style>
+		body{
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			font-family: arial;
+			background-color: #f2f2f2;
+			margin-left: 35%;
+			margin-top: 5%;
+			margin-right: 35%;
+		}
+		.box{
+			padding: 5%;
+			background-color: lightblue;
+			border-radius: 20px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="box">
+	<div class="header">
+		<h1 style="color: darkblue;">Basic Calculator Display</h1>
+	</div>
+
+	<br>
+
+	<div class="addition">
+		<div class="box1" id="addoutput"></div>
+
+		<script>
+			let a = 10;
+			let b = 20;
+			let sum = a + b;
+
+			document.getElementById("addoutput").innerHTML = 
+			"<h2>Addition</h2>" +
+			a + "+" + b + "=" + sum;
+		</script>
+	</div>
+
+	<div class="subtraction">
+		<div class="box2" id="suboutput"></div>
+
+		<script>
+			let c = 10;
+			let d = 5;
+			let diff = c - d;
+
+			document.getElementById("suboutput").innerHTML = 
+			"<h2>Subtraction</h2>" +
+			c + "-" + d + "=" + diff;
+		</script>
+	</div>
+
+	<div class="multiplication">
+		<div class="box3" id="multoutput"></div>
+
+		<script>
+			let e = 67;
+			let f = 41;
+			let prod = e * f;
+
+			document.getElementById("multoutput").innerHTML = 
+			"<h2>Multiplication</h2>" +
+			e + "*" + f + "=" + prod;
+		</script>
+	</div>
+
+	<div class="division">
+		<div class="box4" id="divoutput"></div>
+
+		<script>
+			let g = 11;
+			let h = 27;
+			let quo = g / h;
+
+			document.getElementById("divoutput").innerHTML = 
+			"<h2>Division</h2>" +
+			g + "/" + h + "=" + quo;
+		</script>
+	</div>
+	</div>
+
+</body>
+</html>
